@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,10 +27,22 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        widget.cpp
+        widget.cpp \
+    server.cpp \
+    clientsocket.cpp \
+    listenServer.cpp \
+    readserver.cpp \
+    data.cpp \
+    tcpserver.cpp
 
 HEADERS += \
-        widget.h
+        widget.h \
+    server.h \
+    clientsocket.h \
+    listenServer.h \
+    readserver.h \
+    data.h \
+    tcpserver.h
 
 FORMS += \
         widget.ui
